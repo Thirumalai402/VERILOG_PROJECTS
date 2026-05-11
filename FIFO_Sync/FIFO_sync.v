@@ -42,3 +42,4 @@ end
 
 assign empty = (read_pointer == write_pointer );
 assign full = ( read_pointer == {~write_pointer[fifo_depth_log],write_pointer[fifo_depth_log-1:0]});
+endmodule
